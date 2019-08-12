@@ -780,7 +780,7 @@ RCT_EXPORT_METHOD(fetchAllEvents:(NSDate *)startDate endDate:(NSDate *)endDate c
     }
 
     // TODO: Workaround for calendar events
-    if (startDate == nill) {
+    if (startDate == nil) {
         reject(@"error", @"Start date is invalid", nil);
         return;
     }
